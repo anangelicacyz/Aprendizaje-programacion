@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+        /* Estilizar la primera letra pseudoelemento */
+        p::first-letter {
+            color: violet;
+        }
+        p::before {
+            content :"🐯"
+        }
+        p::after {
+            content:"❣"
+        }
+        p:hover{
+            color: blue;
+        }
+        /* p despues del div y el parametro 
+        se refiere al hijo, en este caso
+        al hijo 2 */
+        div p:nth-child(2){
+            color: green;
+        }
+        /* Este segundo pseudoclase sobre escribe 
+        el primero */
+        div p:nth-child(2){
+            color: violet;
+        }
+        ::placeholder {
+            color: yellowgreen;
+        }
+        a{
+            color: pink;
+            font-size: 20px;
+            background-color: none;
+        }
+        a:active {
+            color:darkorchid;
+            font-size: 50px;
+        }
+        /* a:visited{
+            color:white;
+            background-color: black;
+        } */
+    </style>
+</head>
+<body>
+    <p>
+        hola
+    </p>
+    <div>
+       <p>hola</p>
+       <p>menso</p> 
+    </div>
+    <input type="text" placeholder="name">
+    <p><a href="selectores.html" name="selectores 1">Selectores</a></p>
+    <p><a href="ana.html" name="ana">Ana</a></p>
+
+</body>
+</html>

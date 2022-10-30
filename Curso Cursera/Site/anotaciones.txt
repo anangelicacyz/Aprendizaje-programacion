@@ -1,0 +1,5 @@
+Config browser sync
+Entrar a la carpeta que quiero Config
+y escribir
+
+browser-sync start --server --directory --files "*"

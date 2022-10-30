@@ -1,0 +1,66 @@
+<!-- Video 8 del curso frontend developer de platzi -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p /**Todos los p que estan dentro de div, DESCENDIENTES **/{
+            color: aquamarine;
+        }
+        div > div /**hijo directo **/{
+            background: plum;
+        }
+        .acayano /** Como ya no es hijo directo, no aplica 
+                lo del div aunque este dentro de el **/{
+            background: palevioletred;
+        }
+        section + section /**Aca es un section seguido de otro section**/{
+            color: red;
+        }
+        /* Acá todos los p que estan debajo de section */
+        section ~ p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        @media (max-width: 600px) {
+  h1 {
+    background: red;
+    padding: 2em;
+    color: white; 
+    text-align: center;
+  }
+}
+    </style>
+</head>
+<body>
+    <h1>Aca jugando</h1>
+    <div>
+        <p>Ñaño</p>
+        <p>Esta</p>
+        <p>loquito</p>
+    </div>
+    <div>
+        <div>
+            <p>Ana</p>
+            <div class="acayano">Es</div>
+            
+        </div>
+    </div>
+    <section> 
+    </section>
+    <section>
+        Lo lograremos
+    </section>
+    <p>General de hermanos</p>
+    <section>
+        Lo lograremos
+    </section>
+    <p>General de hermanos</p>
+    <section>
+        Lo lograremos
+    </section>
+    <p>General de hermanos</p>
+</body>
+</html>
