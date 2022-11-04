@@ -1,0 +1,75 @@
+div {
+            
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+}
+section>p {
+    color:gray;
+    font-size: small;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    
+}
+.container {
+    /* position: relative; */
+    display: flex;
+    background-color: white;
+    /* flex-direction: row; */
+    justify-content: left;
+    justify-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    padding-bottom: 30px;
+    border: 2px solid rgb(243, 243, 243);
+    border-radius: 4px;
+
+}
+.icon{
+    padding-top: 15px;
+} 
+ 
+
+.container>div>p {
+  font-size: small;
+}
+.icon{
+    position: relative;
+    vertical-align:middle;
+}
+
+div.decisions>button:nth-child(1){
+    background-color: #1a73e8;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px #1a73e8 solid;
+    color: white;
+}
+div.decisions>button:nth-child(2){
+    background-color: white;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px white;
+    color: #1a73e8;
+}
+.text{
+    margin-left: 25px;
+}
+div >.closing{
+    align-items:center;
+}
+div.close{
+    width: 600px;
+    justify-content:right;
+}
+.closing{
+    background-color: white;
+    text-align: center;
+    font-size: large;
+    border: white;
+    color: rgb(158, 156, 156);
+    margin-left: 580px;
+   
+}

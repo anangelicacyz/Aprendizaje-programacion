@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="interfaz-jira/style.css"  type="text/css" media="screen">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section>p{
+            color: gray;
+            font-size: small;
+            margin-bottom: 0px;
+            margin-left: 15px;
+        }
+        section.container{
+            display: flex;
+            border: 2px solid rgb(234, 234, 234);
+            border-top: 1px solid rgb(251, 251, 251);
+            border-radius: 4px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px;
+            font-size: small;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 2px;
+        }
+        .text{
+            margin-left: 20px;
+        
+        }
+        .icon{
+            margin-top: 10px;
+        }
+       .decisions>button:nth-child(1){
+            background-color: #1a73e8;
+            color: white;
+            padding:7px;
+            padding-left: 9px;
+            padding-right: 9px;
+            border: 1px solid #1a73e8;
+            border-radius: 4px;
+        }
+        .decisions>button:nth-child(2){
+            background-color: white;
+            color: #1a73e8;
+            padding:7px;
+            padding-left: 9px;
+            padding-right: 9px;
+            border: 1px solid white;
+            
+        }
+         section>div:nth-child(3){
+            width: 600px;
+        }
+        .closing{
+            margin-left: 580px;
+            background-color: white;
+            border: 1px solid white;
+        } 
+    </style>
+        
+</head>
+<body>
+    <div>
+    <section>
+        <p>Projects / KB Product / KBPRD </p>
+    </section>
+    <section class="container">
+        <div class="icon">
+            <img src="https://d1rgzvwy6g9xc7.cloudfront.net/atl-vertigo--shard-jira-prod-us-38--5--jres.atlassian.net/s/1jmxwi/b/8/60316440174572ccfb06de9b59ee7581871dc738/_/download/resources/com.pyxis.greenhopper.jira:gh-rapid-common-css/images/kanplan/kanplan-work-helper-section.svg" 
+            width="135px" height="135px" alt="ilustracion de docs"> 
+        </div>
+        <div class="text">
+            <h1>Your Kanban board simplified</h1>
+            <p>You now have a Kanban backlog, where you get more
+                space to plan your team's work. With this, your 
+                Kanban board is now a distraction-
+                free zone for your work-in-progress.
+            </p>
+            <div class="decisions">
+                <button name="go">Take me there</button>
+                <button name="stay">Not now</button>
+            </div>
+        </div>
+        <div>
+            <button class="closing" name="closeWindow"><img src="assets/boton-x.png"
+                width="7px" height="7px"></button>
+        </div>
+    </section>
+    </div>
+    
+</html>
