@@ -1,0 +1,189 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+header {
+    display: flex;
+    background-color: rgb(252, 252, 252);
+    margin: 0;
+    padding-bottom: 15px;
+    
+}
+header>div:nth-child(1){
+    margin-left: 25px;
+}
+header>div>h1{
+    font-size: 30px;
+    margin-top: 15px;
+}
+header>div:nth-child(2){
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+header>div>button{
+    border: 1px solid rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240);
+    border-radius: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* Primer bloque */
+.container1 {
+    display: flex;
+    padding-top: 25px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+.estTotalValue p{
+    margin-left: 25px;
+    font-weight:bold;
+}
+.etv-1{
+    color: rgb(92, 92, 92);
+    font-size: 15px;
+    
+}
+/* Div que contiene el div del texto est total value y el div del totalValueIcon */
+.estTotalValue>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    height: 40px;
+} 
+/* Div que contiene el icono totalValueIcon */
+.estTotalValue>div>p:nth-child(2) {
+    margin-left: 10px;
+}
+.totalValueIcon {
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 2px;
+    padding: 2px;
+    /* position: absolute;
+    top: 110px; */
+
+}
+/* div que contiene el total value en BTC */
+.estTotalValue p>span:nth-child(1){
+    font-size: 20px;
+    color: black;
+}
+/* div que contiene el total value en col */
+.estTotalValue p>span:nth-child(2){
+    font-size: 20px;
+    color:rgb(145, 142, 142);
+}
+/* div que contiene los iconos laterales derechos */
+.rightOptions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* width: 40%;
+    justify-content: center; */
+    position: absolute;
+    right: 30px;
+    font-size: 13px;
+    color: rgba(142,146,152,255);
+    
+}
+.rightOptions>div:nth-child(1){
+    grid-column: 1 / 2;
+    margin-left: 10px;
+    width: 100px;
+    
+}
+.rightOptions>div:nth-child(2){
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+    margin-left: 10px;
+    width: 100px;
+    
+}
+.rightOptions>div:nth-child(3){
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    margin-left: 10px;
+    width: 100px;
+    
+}
+.rightOptions p{
+    text-align: center;
+    
+}
+.container2{
+    font-size: 15px;
+    color: rgba(142,146,152,255);
+    margin-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container2>span{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.container2>span:nth-child(1){
+    color: rgba(208,160,27,255);
+    background-color: rgba(254,246,216,255);
+}
+.container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 25px;
+}
+.container3>span:nth-child(1){
+    grid-column: 1 / 2;
+}
+.container3>span:nth-child(2){
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+}
+.container3>span:nth-child(3){
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+.container3>span:nth-child(4){
+    grid-column: 4 / 5;
+    grid-row: 1 /2;
+}
+.container3>span>p:nth-child(1){
+    font-size: 14px;
+    
+}
+.container3>span>p:nth-child(3){
+    font-size: 17px;
+    color: rgba(142,146,152,255);
+    margin-top: 0px;
+}
+
+.BTCvalues {
+    color: rgba(47,182,135,255);
+    margin-block-start: 0px;
+    margin-block-end: 5px;
+}
+.estimatedPositionsBTC{
+    color: negro;
+    margin-block-start: 0px;
+    margin-block-end: 5px;
+}
+.container4{
+    font-size: 15px;
+    color: rgba(142,146,152,255);
+    margin-left: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    .container4>span{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .container4>span:nth-child(1){
+        color: rgba(48,53,58,255);
+        background-color: rgba(245,245,245,255);
+    }  
