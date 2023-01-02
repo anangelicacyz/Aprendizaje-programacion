@@ -1,0 +1,4 @@
+# tabla usuarios
+id name   lastname      email 
+1  david    zl      david@gmail.com
+2  anita    cyz     anita@gmail.com
