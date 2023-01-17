@@ -86,9 +86,7 @@ app.put("/productos/:idProducto" , (req, res)=>{
     res.json( db.productos)
 
 })
-app.listen(9000, ()=>{
-    console.log("corriendo puerto 9000")
-} )
+
 app.get("/usuarios", (req,res)=>{
     res.json(db.usuarios)
 })
@@ -146,3 +144,72 @@ const email= req.body.email
     db.usuarios[index]= actualizacionUsuario
     res.json(db.usuarios)
 })
+
+//traer todos los usuarios
+app.get("/providers", (req, res)=>{
+    res.json(db.providers)
+})
+//traer un provider por id
+app.get("/providers/:idprovider", (req, res) => {
+    const idProvider = Number(req.params.idprovider)
+
+    if(!idProvider){
+        res.status(400).json({
+            message: "No existe el ID"
+        })
+    }
+    const idsearching= db.providers.find(provider => provider.id ===idProvider)
+    res.json(idsearching)
+
+})
+//Create new provider
+app.post("/providers", (req, res) => {
+    const name= req.body.name
+    const phone= req.body.phone
+    const email= req.body.email
+
+    if (!email || !phone || !name){
+        res.status(400).json({
+            message: "Todos los datos son requeridos"
+        })
+    }
+    const idprovider= db.providers.length + 1
+    
+    let newprovider={
+        idprovider, name, phone, email
+    }
+    db.providers.push(newprovider)
+    res.json(db.providers)
+})
+//update provider
+app.put("/providers/:idprovider", (req, res) =>{
+
+    const idprovider= Number(req.params.idprovider)
+    const index= db.providers.findIndex(provider => provider.id === idprovider)
+
+        if(index< 0){
+            res.status(404).json({
+                message: "No hay datos para actualizar"
+            })
+        }
+
+    const { name, phone, email } = req.body
+
+    let updateProvider= {
+        name, phone, email, id: idprovider
+    }
+
+    db.providers[index]= updateProvider
+    res.json(db.providers)
+
+
+})
+
+
+
+
+
+
+app.listen(9000, ()=>{
+    console.log("corriendo puerto 9000")
+} )
