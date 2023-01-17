@@ -204,6 +204,18 @@ app.put("/providers/:idprovider", (req, res) =>{
 
 
 })
+app.delete("/providers/:idprovider", (req, res) => {
+    const idProvider= Number(req.params.idprovider)
+    const validationProvider= db.providers.find(provider => provider.id ===idProvider)
+        if(!validationProvider){
+            res.status(404).json({
+                messaje: "El ID no existe"
+            })
+        }
+    
+    db.providers= db.providers.filter(provider => provider.id !== validationProvider.id)
+    res.json(db.providers)
+})
 
 
 
