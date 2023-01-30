@@ -140,19 +140,6 @@ let resulInteg= calculaIntegral(resultDeriv)
 
 console.log(resulInteg)
 
-function esPalindromo(text){
-    let loEs
-    console.log(esPalindromo)
-    
-// su codigo aqui ... vamos tu puedes
-
-    return loEs
-}
-
-let frase= "Anita lava la tina"
-const respuesta = esPalindromo(frase)
-
-console.log(respuesta)
 
 
 
