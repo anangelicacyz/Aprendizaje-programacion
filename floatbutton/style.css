@@ -19,6 +19,7 @@ a span {
     font-family: Arial;
     letter-spacing: 8px;
     z-index: 1;
+    background: none;
 }
 
 a .liquid {
