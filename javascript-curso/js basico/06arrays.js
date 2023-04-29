@@ -224,3 +224,19 @@ console.log(verduras)
 //comenzar en 1, elimiar 0 y añadir aguacate y pimiento
 verduras.splice(1, 0, "aguacate", "pimiento")
 console.log(verduras)
+
+console.log("MAP")
+console.log("MAP")
+console.log("MAP")
+
+const herramientas= ["pala", "desatornillador", "llave", "martillo"]
+
+
+function mayusculas (palabra){
+    return palabra.toUpperCase()
+}
+
+let mayusHerramientas= herramientas.map(mayusculas)
+for(const herramienta of mayusHerramientas){
+    console.log(herramienta)
+}
